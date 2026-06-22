@@ -214,7 +214,6 @@ document.getElementById("elInput").addEventListener("keyup", function () {
     });
 });
 
-/* ── GRÁFICOS DESPUÉS Y PROTEGIDOS: si Chart.js falla, no rompe la tabla ── */
 if (typeof Chart !== "undefined") {
 
     new Chart(document.getElementById("tipos"), {
@@ -225,7 +224,7 @@ if (typeof Chart !== "undefined") {
                     label: "Programas",
                     data: [
                         { x: "Institutos Profesionales (IP)", y: 141 },
-                        { x: "Universidades", y: 50 },
+                        { x: "Universidades", y: 41 },
                         { x: "Centros de Formación Técnica (CFT)", y: 6 },
                     ],
                     backgroundColor: ["rgba(232,87,26,1)", "rgba(241,142,45,.5)", "rgba(241,142,45,.5)"],
@@ -267,7 +266,7 @@ if (typeof Chart !== "undefined") {
                     callbacks: {
                         label: function (context) {
                             const point = context.raw;
-                            const pct = ((point.y / 197) * 100).toFixed(1);
+                            const pct = ((point.y / 188) * 100).toFixed(1);
                             return point.y.toLocaleString("es-CL") + " programas (" + pct + "%)";
                         },
                     },
