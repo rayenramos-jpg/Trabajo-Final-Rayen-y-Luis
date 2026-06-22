@@ -38,99 +38,107 @@
 
         <main id="contenedor">
 
-            <p>En Chile, "estudiar Diseño" puede significar cosas muy distintas. Bajo un mismo nombre conviven programas que cuestan menos de dos millones de pesos al año y otros que superan los diez; carreras de cuatro semestres y otras de diez; instituciones con siete años de acreditación junto a otras que operan bajo tutela.</p>
+            <p>En Chile, «estudiar Diseño» puede significar cosas muy distintas. Bajo un mismo nombre conviven programas que cuestan menos de dos millones de pesos al año y otros que superan los diez; carreras de cuatro semestres y otras de diez; instituciones con siete años de acreditación junto a otras que operan bajo tutela.</p>
 
-            <p>Revisamos 197 programas de Diseño impartidos por 33 instituciones del sistema de educación superior. Al ordenarlos según quién los dicta —universidades, institutos profesionales (IP) o centros de formación técnica (CFT)— aparece un patrón: el título de "Diseñador" no es uno solo, sino un conjunto de productos educativos fragmentado por el tipo de institución que lo ofrece.</p>
+            <p>Revisamos 197 programas de Diseño impartidos por 33 instituciones del sistema de educación superior. Al ordenarlos según quién los dicta —universidades, institutos profesionales (IP) o centros de formación técnica (CFT)— aparece un patrón: el título de «Diseñador» no es uno solo, sino un conjunto de productos educativos fragmentado por el tipo de institución que lo ofrece.</p>
 
             <p>Este reportaje traduce visualmente esos datos oficiales para responder una pregunta: ¿qué tan distinto es lo que recibe quien estudia Diseño según dónde lo haga?</p>
 
             <h4>¿Quién imparte Diseño en Chile?</h4>
 
-			 <p>La oferta no se reparte de forma pareja. De los 197 programas, la gran mayoría está en manos de institutos profesionales, mientras las universidades y, sobre todo, los centros de formación técnica ocupan un espacio menor.</p>
+            <p>La oferta no se reparte de forma pareja. De los 197 programas, la gran mayoría está en manos de institutos profesionales, mientras las universidades y, sobre todo, los centros de formación técnica ocupan un espacio menor.</p>
 
-		      <figure>
-    <canvas id="tipos"></canvas>
-    <figcaption>Barras del nº de programas por tipo de institución.</figcaption>
-</figure>
-			
-            <p>Los IP concentran 141 de los 197 programas (72%), seguidos por 50 universidades (25%) y apenas 6 CFT (3%). A esto se suma una fuerte centralización geográfica: 75 programas —casi 4 de cada 10— se imparten en la Región Metropolitana.</p>	
-
-			 <h4>Una misma carrera, muchos nombres y sedes</h4>
-
-			<p>Más allá del conteo, la oferta se dispersa en variantes: "Diseño", "Diseño Gráfico", "Diseño Gráfico Digital", "Ingeniería en Diseño", bachilleratos y técnicos. El siguiente mapa de árbol muestra cómo se distribuye el catálogo completo entre tipos de institución y sus sedes.</p>
-			
             <figure>
-                <canvas id="dispersion"></canvas>
+                <canvas id="tipos"></canvas>
+                <figcaption>Programas de Diseño según tipo de institución. Fuente: acceso.mineduc.cl (197 programas).</figcaption>
             </figure>
 
-            <p>El tamaño de cada bloque revela la concentración: unos pocos IP de gran tamaño sostienen buena parte de la oferta, mientras decenas de programas universitarios se reparten en bloques pequeños y heterogéneos.</p>
+            <p>Los IP concentran 141 de los 197 programas (72%), seguidos por 50 universidades (25%) y apenas 6 CFT (3%). A esto se suma una fuerte centralización geográfica: 75 programas —casi 4 de cada 10— se imparten en la Región Metropolitana.</p>
+
+            <h4>Una misma carrera, muchos nombres y sedes</h4>
+
+            <p>Más allá del conteo, la oferta se dispersa en variantes: «Diseño», «Diseño Gráfico», «Diseño Gráfico Digital», «Ingeniería en Diseño», bachilleratos y técnicos. El siguiente mapa de árbol muestra cómo se distribuye el catálogo completo entre tipos de institución y sus sedes.</p>
+
+            <figure>
+                <object type="image/svg+xml" data="treemap.svg" width="100%" height="450"></object>
+                <figcaption>Distribución de los 197 programas por tipo de institución e institución. Fuente: acceso.mineduc.cl.</figcaption>
+            </figure>
+
+            <p>El tamaño de cada bloque revela la concentración: unos pocos IP de gran tamaño —AIEP e INACAP suman más de la mitad de la oferta— sostienen el catálogo, mientras decenas de programas universitarios se reparten en bloques pequeños y heterogéneos.</p>
 
             <h4>¿Garantiza lo mismo el título según quién lo entregue?</h4>
 
             <p>Aquí aparece la asimetría más nítida. Al cruzar el tipo de institución con su acreditación, las trayectorias se separan: los 6 CFT operan todos bajo tutela, sin acreditación vigente; los IP se dividen casi por mitades entre 5 y 7 años; y las universidades se dispersan por todo el rango, desde 4 hasta 7 años.</p>
 
-          
-			<p>El gráfico fluvial deja ver que la calidad certificada no depende del nombre de la carrera, sino del tipo de institución y, muchas veces, de su ubicación. El sello "Diseñador" promete lo mismo, pero el respaldo institucional detrás varía enormemente.</p>
-			
-            </h4>¿Cuánto cuesta el mismo título según dónde se estudie?</h4>
-			
+            <figure>
+                <object type="image/svg+xml" data="fluvial.svg" width="100%" height="500"></object>
+                <figcaption>Flujo de programas según tipo de institución, acreditación y zona. Fuente: acceso.mineduc.cl.</figcaption>
+            </figure>
+
+            <p>El gráfico deja ver que la calidad certificada no depende del nombre de la carrera, sino del tipo de institución y, muchas veces, de su ubicación. El sello «Diseñador» promete lo mismo, pero el respaldo institucional detrás varía enormemente.</p>
+
+            <h4>¿Cuánto cuesta el mismo título según dónde se estudie?</h4>
+
             <p>La fragmentación se vuelve más concreta al mirar el arancel. Normalizando todos los valores a pesos (UF a $40.796), el contraste es marcado:</p>
 
-			<figure>
-    <canvas id="aranceles"></canvas>
-    <figcaption>Arancel anual promedio según tipo de institución, en pesos. Fuente: acceso.mineduc.cl. Valores en UF convertidos a $40.795,85 (21-06-2026).</figcaption>
-</figure>            
-			
-			<p>Una universidad cobra en promedio $6,1 millones anuales, frente a $2,9 millones de un IP y $2,2 millones de un CFT: estudiar Diseño en una universidad cuesta más del doble que en un IP. Y los extremos son aún más amplios: desde $1,82 millones en un técnico de IP hasta $10,4 millones en un bachillerato universitario.</p>
-			
-			<p>A esa brecha de precio se suma una de tiempo y de grado: los técnicos de IP duran 4 semestres y los profesionales 8, mientras las universidades llegan a 9 o 10. Y solo las universidades entregan "Profesional con Licenciatura" (32 de sus programas), un grado que ni IP ni CFT ofrecen. El mismo nombre encubre títulos jurídicamente distintos.</p>
+            <figure>
+                <canvas id="aranceles"></canvas>
+                <figcaption>Arancel anual promedio según tipo de institución, en pesos. Fuente: acceso.mineduc.cl. UF convertida a $40.795,85 (21-06-2026).</figcaption>
+            </figure>
 
-			<h4>Conclusiones</h4>
-			
-            <p>Los datos confirman la hipótesis: "Diseñador" es un título fragmentado. Bajo un nombre compartido, el sistema chileno ofrece productos que difieren en costo (de 1,8 a 10,4 millones), duración (de 4 a 10 semestres), acreditación (de bajo tutela a 7 años) y hasta en el grado académico que otorgan.</p>
+            <p>Una universidad cobra en promedio $6,1 millones anuales, frente a $2,9 millones de un IP y $2,2 millones de un CFT: estudiar Diseño en una universidad cuesta más del doble que en un IP. Y los extremos son aún más amplios: desde $1,82 millones en un técnico de IP hasta $10,4 millones en un bachillerato universitario.</p>
 
-            <p>Esa fragmentación no es neutra: traslada al estudiante —y a su familia— la tarea de descifrar qué hay realmente detrás de cada oferta. Dos personas pueden egresar como "diseñadoras" tras recorridos formativos, económicos y de respaldo institucional radicalmente distintos.</p>
-			
+            <p>A esa brecha de precio se suma una de tiempo y de grado: los técnicos de IP duran cuatro semestres y los profesionales ocho, mientras las universidades llegan a nueve o diez. Y solo las universidades entregan «Profesional con Licenciatura», un grado que ni IP ni CFT ofrecen. El mismo nombre encubre títulos jurídicamente distintos.</p>
+
+            <h4>Conclusiones</h4>
+
+            <p>Los datos confirman la hipótesis: «Diseñador» es un título fragmentado. Bajo un nombre compartido, el sistema chileno ofrece productos que difieren en costo (de 1,8 a 10,4 millones), duración (de cuatro a diez semestres), acreditación (de bajo tutela a siete años) y hasta en el grado académico que otorgan.</p>
+
+            <p>Esa fragmentación no es neutra: traslada al estudiante —y a su familia— la tarea de descifrar qué hay realmente detrás de cada oferta. Dos personas pueden egresar como «diseñadoras» tras recorridos formativos, económicos y de respaldo institucional radicalmente distintos.</p>
+
             <p>Para quien decide, la lección es clara: el nombre de la carrera dice poco; lo que define el valor del título es el tipo de institución, su acreditación y el grado que entrega. Esos son los datos que conviene mirar antes que el rótulo.</p>
-			
-			<h4>Explora el catálogo completo</h4>
-<p>Los 197 programas de Diseño del sistema. Filtra por institución, región o tipo y compara por ti mismo:</p>
 
-<div>
-    <input type="text" id="elInput" placeholder="Filtrar carreras de Diseño…" />
-    <div id="contenedordetabla">
-        <table>
-            <thead>
-                <tr>
-                    <th>N°</th>
-                    <th>Carrera</th>
-                    <th>Institución</th>
-                    <th>Tipo</th>
-                    <th>Acreditación</th>
-                    <th>Región</th>
-                    <th>Arancel</th>
-                </tr>
-            </thead>
-            <tbody id="este"></tbody>
-        </table>
-    </div>
-</div>
-			
+            <h4>Explora el catálogo completo</h4>
+
+            <p>Los 197 programas de Diseño del sistema. Filtra por institución, región o tipo y compara por ti mismo:</p>
+
+            <div>
+                <input type="text" id="elInput" placeholder="Filtrar carreras de Diseño…" />
+                <div id="contenedordetabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>N°</th>
+                                <th>Carrera</th>
+                                <th>Institución</th>
+                                <th>Tipo</th>
+                                <th>Acreditación</th>
+                                <th>Región</th>
+                                <th>Arancel</th>
+                            </tr>
+                        </thead>
+                        <tbody id="este"></tbody>
+                    </table>
+                </div>
+            </div>
+
             <h5>Fuentes</h5>
-            <p><a href="https://www.bcn.cl/leychile/navegar?idNorma=1118991">Congreso Nacional. Ley 21.091. <i>Sobre Educación Superior. </i> </a>
-			<br> <a href="https://www.cnachile.cl/Paginas/Acreditacion-institucional.aspx">Comisión Nacional de Acreditación. <i>Acreditación Institucional</i></a>
-			<br> <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/">Servicio de Información de Educación Superior. <i>Bases de datos de la Oferta Académica en el sistema de Educación Superior en Chile</i></a>
-			<br><a href="https://datavizcatalogue.com/ES/metodos/diagrama_de_dispersion.html">Catálogo de Visualización de Datos. <i>Diagrama de Dispersión </i> </a></p>
+            <p>
+                <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/">Servicio de Información de Educación Superior (SIES). <i>Bases de datos de la Oferta Académica.</i></a>
+                <br /><a href="https://www.cnachile.cl/Paginas/Acreditacion-institucional.aspx">Comisión Nacional de Acreditación. <i>Acreditación Institucional.</i></a>
+                <br /><a href="https://acceso.mineduc.cl/">Subsecretaría de Educación Superior. <i>Acceso a la Educación Superior.</i></a>
+                <br /><a href="https://www.bcentral.cl/">Banco Central de Chile. <i>Valor de la UF.</i></a>
+                <br /><a href="https://datavizcatalogue.com/ES/metodos/conjuntos_paralelos.html">Catálogo de Visualización de Datos. <i>Conjuntos paralelos y mapa de árbol.</i></a>
+            </p>
         </main>
 
         <footer>
             <div>
-                <a href="https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/" target="_blank"
-                    >"Inspirado en Reuters" + "Diseño y visualización de información".</a
-                >
+                <a href="https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/" target="_blank">Inspirado en Reuters</a>
                 <a href="https://github.com/profesorfaco/troncal">Diseño y visualización de información</a>
             </div>
         </footer>
+
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="script.js"></script>
     </body>
