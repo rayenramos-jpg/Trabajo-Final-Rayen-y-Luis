@@ -7,18 +7,16 @@
 }
 
 :root {
-    /* Colores */
     --bg: #fefefe;
     --color-text: rgb(64, 64, 64);
     --color-muted: rgb(102, 102, 102);
-      --color-oscurisimo: #000;
+    --color-oscurisimo: #000;
     --color-oscuro: #B55E1C;
     --color-normal: #555b5c;
     --color-iluminado: #aaa;
     --color-iluminadisimo: #EFD0AA;
     --accent: #e8571a;
     --border: silver;
-    /* Tipografía */
     --serif: "Spectral", serif;
     --sans: "Georama", sans-serif;
 }
@@ -31,8 +29,6 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
-
-/* ── Barra de navegación y pie: comparten la misma estructura de layout ── */
 
 nav,
 footer {
@@ -47,6 +43,7 @@ nav {
     border-width: 0 0 1px;
     margin-bottom: 4.5vh;
 }
+
 footer {
     border-width: 1px 0 0;
     margin-top: 20vh;
@@ -75,8 +72,6 @@ footer div {
     font-size: 0.8rem;
 }
 
-/* ── Estilos de enlace ── */
-
 a {
     color: var(--color-text);
     text-decoration: underline;
@@ -89,8 +84,6 @@ a:hover {
     text-decoration: none;
     color: black;
 }
-
-/* ── Cabecera ── */
 
 header {
     width: 95%;
@@ -118,8 +111,6 @@ header a:hover {
     text-decoration-style: dotted;
 }
 
-/* ── Metadatos de la cabecera ── */
-
 address,
 time {
     font-size: 0.875rem;
@@ -142,16 +133,12 @@ time {
     display: block;
 }
 
-/* ── Artículo ── */
-
 main {
     width: 95%;
     max-width: 42rem;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
-
-/* ── Jerarquía tipográfica ── */
 
 h1 {
     font-weight: 700;
@@ -197,16 +184,10 @@ h5 {
     font-size: calc(0.65rem + 0.25vh + 0.25vw);
 }
 
-/* ── Cuerpo del texto ── */
-
 p {
     font-family: var(--serif);
     color: var(--color-text);
     margin: 1.2rem 0;
-}
-
-p small {
-    font-weight: 500;
 }
 
 em {
@@ -222,28 +203,6 @@ h5 + p {
     font-family: var(--sans);
     font-size: 0.8rem;
     margin: 0.3rem 0 1.2rem;
-}
-
-ul {
-    margin: 0 0 1.1rem;
-    padding: 0;
-    list-style: none;
-    font-size: 90%;
-}
-
-ul li {
-    margin-bottom: 0.25rem;
-    padding-left: 1.25rem;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></svg>');
-    background-repeat: no-repeat;
-    background-size: 1rem 1rem;
-    background-position-y: center;
-}
-
-/* ── Figura que contiene el gráfico ── */
-div#contenedordetabla {
-    width: 100%;
-    max-width: 980px;
 }
 
 input {
@@ -271,6 +230,8 @@ input:focus {
 }
 
 div#contenedordetabla {
+    width: 100%;
+    max-width: 980px;
     overflow-x: auto;
     font-size: 70%;
 }
