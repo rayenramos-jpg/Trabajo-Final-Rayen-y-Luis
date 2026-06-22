@@ -1,4 +1,3 @@
-/* ── TABLA PRIMERO: así se llena aunque Chart.js no cargue ── */
 const datos = [
     {"carrera": "Bachillerato En Artes, Arquitectura Y Diseño", "institucion": "U. Finis Terrae", "tipo": "Universidad", "acreditacion": "5 años", "region": "Metropolitana", "arancel": "$7.200.000"},
     {"carrera": "Bachillerato En Diseño", "institucion": "U. Del Desarrollo", "tipo": "Universidad", "acreditacion": "6 años", "region": "Metropolitana", "arancel": "$10.402.942"},
@@ -187,16 +186,7 @@ const datos = [
     {"carrera": "Tecnico En Diseño Grafico", "institucion": "Ip Aiep", "tipo": "IP", "acreditacion": "5 años", "region": "Biobío", "arancel": "$2.500.000"},
     {"carrera": "Tecnico En Diseño Grafico", "institucion": "Ip Santo Tomas", "tipo": "IP", "acreditacion": "5 años", "region": "La Araucanía", "arancel": "$2.754.000"},
     {"carrera": "Tecnico En Diseño Grafico", "institucion": "Ip Aiep", "tipo": "IP", "acreditacion": "5 años", "region": "-", "arancel": "$2.680.000"},
-    {"carrera": "Tecnico En Diseño Y Contenido Para Plataformas Digitales", "institucion": "Ip De Chile", "tipo": "IP", "acreditacion": "5 años", "region": "-", "arancel": "$1.820.000"},
-    {"carrera": "Nan", "institucion": "Nan", "tipo": "Universidad", "acreditacion": "Sin información", "region": "nan", "arancel": "—"},
-    {"carrera": "Nan", "institucion": "Nan", "tipo": "Universidad", "acreditacion": "Sin información", "region": "nan", "arancel": "—"},
-    {"carrera": "Nan", "institucion": "Nan", "tipo": "Universidad", "acreditacion": "Sin información", "region": "nan", "arancel": "—"},
-    {"carrera": "Nan", "institucion": "Nan", "tipo": "Universidad", "acreditacion": "Sin información", "region": "nan", "arancel": "—"},
-    {"carrera": "Nan", "institucion": "Nan", "tipo": "Universidad", "acreditacion": "Sin información", "region": "nan", "arancel": "—"},
-    {"carrera": "Nan", "institucion": "Nan", "tipo": "Universidad", "acreditacion": "Sin información", "region": "nan", "arancel": "—"},
-    {"carrera": "Nan", "institucion": "Nan", "tipo": "Universidad", "acreditacion": "Sin información", "region": "nan", "arancel": "—"},
-    {"carrera": "Nan", "institucion": "Nan", "tipo": "Universidad", "acreditacion": "Sin información", "region": "nan", "arancel": "—"},
-    {"carrera": "Nan", "institucion": "Nan", "tipo": "Universidad", "acreditacion": "Sin información", "region": "nan", "arancel": "—"}
+    {"carrera": "Tecnico En Diseño Y Contenido Para Plataformas Digitales", "institucion": "Ip De Chile", "tipo": "IP", "acreditacion": "5 años", "region": "-", "arancel": "$1.820.000"}
 ];
 
 const t = document.querySelector("#este");
